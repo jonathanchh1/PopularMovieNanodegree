@@ -10,11 +10,11 @@
     <string name="display_preferences_sort_order_title">Sort Order</string>
     <string name="display_preferences_sort_order_desc">Select sort order for the movies</string>
     <string name="display_preferences_sort_order_key">sortType</string>
-    <string name="display_preferences_sort_default_value">popularity.desc</string>
+    <string name="display_preferences_sort_default_value">popularity.description</string>
     <string name="sort_array_item_1">Most Popular</string>
     <string name="sort_array_item_2">Highest-rated</string>
-    <string name="sort_array_item_1_value">popularity.desc</string>
-    <string name="sort_array_item_2_value">vote_average.desc</string>
+    <string name="pref_popular_value">popularity.desc</string>
+    <string name="pref_top_rated_value">vote_average.desc</string>
     <string name="title_activity_movie_detail">MovieDetailActivity</string>
 
 </resources>

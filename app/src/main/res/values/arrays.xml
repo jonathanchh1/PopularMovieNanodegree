@@ -6,7 +6,7 @@
     </string-array>
 
     <string-array name="sortArrayValues">
-        <item>@string/sort_array_item_1_value</item>
-        <item>@string/sort_array_item_2_value</item>
+        <item>@string/pref_popular_value</item>
+        <item>@string/pref_top_rated_value</item>
     </string-array>
 </resources>

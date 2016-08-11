@@ -24,10 +24,11 @@
 
     <!--layout background -->
     <style name="LayoutTheme" parent="AppTheme">
-        <item name="android:layout_width">230dp</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
+    >
     <!-- detail headline -->
     <style name="detailHeader" parent="AppTheme">
         <item name="android:textColor">@color/textColor</item>
