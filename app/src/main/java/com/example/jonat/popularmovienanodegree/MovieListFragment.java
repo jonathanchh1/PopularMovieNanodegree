@@ -21,7 +21,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.jonat.popularmovienanodegree.Adapters.ImageAdapter;
-import com.example.jonat.popularmovienanodegree.Data.Constants;
+import com.example.jonat.popularmovienanodegree.Constant.Constants;
 import com.example.jonat.popularmovienanodegree.Data.MovieContract;
 import com.example.jonat.popularmovienanodegree.Model.Movie;
 
