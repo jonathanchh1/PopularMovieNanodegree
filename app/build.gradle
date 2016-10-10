@@ -19,7 +19,7 @@ android {
     }
 
     buildTypes.each {
-        it.buildConfigField "String", "MOVIE_API", "\"b6be51a6daac38afe88b455d4254e68d\"";
+        it.buildConfigField "String", "MOVIE_API", "\"ADD YOUR API_KEY\"";
     }
     sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/layout_lands'] } }
 }
