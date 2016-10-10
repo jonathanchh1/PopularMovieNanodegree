@@ -18,15 +18,29 @@ android {
         }
     }
 
-    buildTypes.each{
+    buildTypes.each {
         it.buildConfigField "String", "MOVIE_API", "\"b6be51a6daac38afe88b455d4254e68d\"";
     }
+    sourceSets { main { res.srcDirs = ['src/main/res', 'src/main/res/layout_lands'] } }
+}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.squareup.retrofit2:retrofit:2.0.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
 
 }

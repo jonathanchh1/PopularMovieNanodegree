@@ -1,68 +1,34 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:textStyle">normal</item>
     </style>
 
-    <!-- detail page theme -->
-    <style name="DetailTheme" parent="AppTheme">
-        <item name="android:actionBarStyle">@style/Widget.AppCompat.ActionBar</item>
+    <style name="AppThemeMain" parent="Theme.AppCompat.Light.DarkActionBar">
     </style>
 
-    <!-- Detail page theme action bar. -->
-    <style name="ActionBar.DetailTheme" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse"></style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <!-- settings theme -->
-    <style name="SettingTheme" parent="AppTheme">
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
-    <!--layout background -->
-    <style name="LayoutTheme" parent="AppTheme">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="Button.Red" parent="Button">
+        <item name="colorButtonNormal">@color/red</item>
     </style>
 
-    >
-    <!-- detail headline -->
-    <style name="detailHeader" parent="AppTheme">
-        <item name="android:textColor">@color/textColor</item>
-        <item name="android:gravity">center_horizontal</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:paddingLeft">10dp</item>
-        <item name="android:paddingRight">10dp</item>
-        <item name="android:paddingTop">10dp</item>
-        <item name="android:paddingBottom">10dp</item>
-        <item name="android:background">@color/primary</item>
+    <style name="Button.ColorPrimary" parent="Button">
+        <item name="colorButtonNormal">@color/colorPrimary</item>
     </style>
 
-    <!-- detail poster -->
-    <style name="detailPoster" parent="AppTheme">
-        <item name="android:paddingRight">16dp</item>
-    </style>
+    <style name="Button">Button</style>
 
-    <!-- detail rating -->
-    <style name="detailRating" parent="AppTheme">
-    </style>
-
-
-    <!-- detail year-->
-    <style name="detailYear" parent="AppTheme">
-        <item name="android:textColor">@color/colorPrimaryDark</item>
-        <item name="android:textSize">22sp</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
-    <!-- detail synopsis -->
-    <style name="detailSynopsis" parent="AppTheme">
-        <item name="android:paddingRight">16dp</item>
-        <item name="android:paddingLeft">16dp</item>
-        <item name="android:paddingBottom">16dp</item>
-    </style>
 </resources>

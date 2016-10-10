@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#5e5e5b</color>
+    <color name="colorPrimaryDark">#494945</color>
     <color name="colorAccent">#FF4081</color>
     <color name="textColor">#000</color>
     <color name="titleColor">#FF00</color>
     <color name="background">#FFFFFF</color>
     <color name="primary">#ffffff</color>
+    <color name="red">#FF00</color>
+    <color name="toolbar_color">#e982e5</color>
+    <color name="text_color_for_movie_overview">@android:color/black</color>
+    <color name="text_background">@android:color/black</color>
+    <color name="text_color_for_review_content">@android:color/black</color>
 </resources>

@@ -1,40 +1,57 @@
 package com.example.jonat.popularmovienanodegree;
 
+import android.app.FragmentManager;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+
+import com.example.jonat.popularmovienanodegree.Data.Constants;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 public class DetailActivity extends AppCompatActivity {
 
-    private final String LOG_TAG = DetailActivity.class.getSimpleName();
+    @Bind(R.id.detail_toolbar)
+    Toolbar mToolbar;
+    private FragmentManager fragmentManager = getFragmentManager();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+        ButterKnife.bind(this);
+        setSupportActionBar(mToolbar);
 
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new DetailFragment())
+
+        if (savedInstanceState == null) {
+            fragmentManager.beginTransaction()
+                    .add(R.id.movie_detail_container, new DetailFragment())
                     .commit();
+        }
+
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_detail, menu);
-        return true;
-    }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
 
-        if (id == R.id.action_setting) {
-            startActivity(new Intent(this, SettingActivity.class));
-            return true;
+        switch (item.getItemId()) {
+            case R.id.home:
+                onBackPressed();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-
-        return super.onOptionsItemSelected(item);
     }
 }
 
